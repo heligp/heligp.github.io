@@ -117,17 +117,19 @@ function renderProjectCards(category = 'all') {
     if (!projectsGrid) return;
 
     let projectsToRender = [];
-    
+
     if (category === 'all') {
-        Object.values(projectsData).forEach(categoryProjects => {
-            projectsToRender.push(...categoryProjects);
+        Object.entries(projectsData).forEach(([cat, categoryProjects]) => {
+            categoryProjects.forEach(project => {
+                projectsToRender.push({ ...project, category: cat });
+            });
         });
     } else if (projectsData[category]) {
-        projectsToRender = projectsData[category];
+        projectsToRender = projectsData[category].map(project => ({ ...project, category }));
     }
 
     projectsGrid.innerHTML = projectsToRender.map(project => `
-        <div class="project-card" data-category="${category}" data-project-id="${project.id}">
+        <div class="project-card" data-category="${project.category}" data-project-id="${project.id}">
             <div class="project-thumbnail" style="background-image: url('${project.thumbnail}')">
                 ${!project.thumbnail ? '📊' : ''}
             </div>
