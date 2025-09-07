@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Helí Gonzales Pérez</title>
+    <meta name="description" content="Ponte en contacto conmigo para proyectos de ML, LLMs, Agentes, MCP, RAG e Infraestructura.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="../index.html" class="logo">
+                    <div class="logo-icon">H</div>
+                    Helí Gonzales Pérez
+                </a>
+                <nav class="nav-links">
+                    <a href="../index.html" class="nav-link">Inicio</a>
+                    <a href="about.html" class="nav-link">Sobre mí</a>
+                    <a href="#formulario" class="nav-link">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Hablemos de tu proyecto</h1>
+                <p class="hero-subtitle">Estoy disponible para colaborar en proyectos de ML, LLMs, Agentes, MCP, RAG e Infraestructura</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section id="formulario" class="section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-image">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-info">
+                        <p><strong>Email:</strong> heligonzalespe@gmail.com</p>
+                        <p><strong>LinkedIn:</strong> linkedin.com/in/heligonzalespe</p>
+                        <p><strong>GitHub:</strong> github.com/heligonzalespe</p>
+                        <p><strong>Ubicación:</strong> Lima, Perú</p>
+                    </div>
+                    <div class="about-links">
+                        <a href="../assets/docs/cv.pdf" class="btn btn-primary" target="_blank">Descargar CV</a>
+                        <a href="https://linkedin.com/in/heligonzalespe" class="btn btn-secondary" target="_blank">LinkedIn</a>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Envíame un mensaje</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="empresa">Empresa</label>
+                            <input type="text" id="empresa" name="empresa">
+                        </div>
+                        <div class="form-group">
+                            <label for="proyecto">Tipo de Proyecto</label>
+                            <select id="proyecto" name="proyecto">
+                                <option value="">Selecciona una opción</option>
+                                <option value="ml">Machine Learning</option>
+                                <option value="llms">LLMs y NLP</option>
+                                <option value="agentes">Agentes Inteligentes</option>
+                                <option value="mcp">MCP y Coordinación</option>
+                                <option value="rag">RAG y Documentación</option>
+                                <option value="infra">Infraestructura y MLOps</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section cta">
+        <div class="container">
+            <h2>¿Listo para comenzar?</h2>
+            <p>Agendemos una llamada para discutir tu proyecto en detalle.</p>
+            <div class="cta-buttons">
+                <a href="mailto:heligonzalespe@gmail.com" class="btn btn-white">Enviar email</a>
+                <a href="https://calendly.com/heligonzalespe" class="btn btn-outline-white" target="_blank">Agendar llamada</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">
+                    <div class="logo-icon">H</div>
+                    Helí Gonzales Pérez
+                </div>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/heligonzalespe" class="footer-link" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/heligonzalespe" class="footer-link" target="_blank">GitHub</a>
+                    <a href="mailto:heligonzalespe@gmail.com" class="footer-link">Email</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        // Contact form handling
+        document.querySelector('.contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Create mailto link
+            const subject = `Nuevo mensaje de ${data.nombre} - ${data.proyecto || 'Proyecto general'}`;
+            const body = `
+Nombre: ${data.nombre}
+Email: ${data.email}
+Empresa: ${data.empresa || 'No especificada'}
+Tipo de Proyecto: ${data.proyecto || 'No especificado'}
+
+Mensaje:
+${data.mensaje}
+            `;
+            
+            const mailtoLink = `mailto:heligonzalespe@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+</html>

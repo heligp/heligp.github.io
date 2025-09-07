@@ -1,0 +1,36 @@
+{
+  "name": "heligonzalespe-portfolio",
+  "version": "1.0.0",
+  "description": "Landing page profesional de Helí Gonzales Pérez - Especialista en ML, LLMs, Agentes, MCP, RAG e Infraestructura",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server .",
+    "build": "echo 'Building static site...' && npm run minify-css && npm run minify-js",
+    "minify-css": "npx clean-css-cli -o dist/css/styles.min.css css/styles.css",
+    "minify-js": "npx uglify-js js/main.js -o dist/js/main.min.js",
+    "deploy": "npm run build && echo 'Ready for deployment'"
+  },
+  "keywords": [
+    "portfolio",
+    "machine-learning",
+    "llms",
+    "agents",
+    "mcp",
+    "rag",
+    "infrastructure",
+    "data-science",
+    "ai"
+  ],
+  "author": "Helí Gonzales Pérez",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "clean-css-cli": "^5.6.2",
+    "uglify-js": "^3.17.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/heligonzalespe/portfolio.git"
+  },
+  "homepage": "https://heligonzalespe.github.io/portfolio"
+}
