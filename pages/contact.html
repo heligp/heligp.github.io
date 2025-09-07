@@ -127,30 +127,6 @@
     </footer>
 
     <script src="../js/main.js"></script>
-    <script>
-        // Contact form handling
-        document.querySelector('.contact-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
-            
-            // Create mailto link
-            const subject = `Nuevo mensaje de ${data.nombre} - ${data.proyecto || 'Proyecto general'}`;
-            const body = `
-Nombre: ${data.nombre}
-Email: ${data.email}
-Empresa: ${data.empresa || 'No especificada'}
-Tipo de Proyecto: ${data.proyecto || 'No especificado'}
-
-Mensaje:
-${data.mensaje}
-            `;
-            
-            const mailtoLink = `mailto:heligonzalespe@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-            window.location.href = mailtoLink;
-        });
-    </script>
+    <script src="../js/contact.js"></script>
 </body>
 </html>

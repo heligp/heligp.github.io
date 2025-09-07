@@ -1,7 +1,10 @@
 // Contact form functionality
+// Replace the endpoint below with your Formspree (or other service) URL
+const FORM_ENDPOINT = 'https://formspree.io/f/your_form_id';
+
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('.contact-form');
-    
+
     if (contactForm) {
         contactForm.addEventListener('submit', handleFormSubmit);
     }
@@ -14,33 +17,43 @@ function handleFormSubmit(e) {
     const submitBtn = form.querySelector('button[type="submit"]');
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
-    
+
     // Show loading state
     submitBtn.classList.add('loading');
     submitBtn.disabled = true;
-    
+
     // Validate form
     if (!validateForm(data)) {
         showMessage('Por favor, completa todos los campos requeridos.', 'error');
         resetFormState(submitBtn);
         return;
     }
-    
-    // Create mailto link
-    const subject = `Nuevo mensaje de ${data.nombre} - ${data.proyecto || 'Proyecto general'}`;
-    const body = createEmailBody(data);
-    
-    const mailtoLink = `mailto:heligonzalespe@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    // Open email client
-    window.location.href = mailtoLink;
-    
-    // Show success message
-    showMessage('¡Mensaje enviado! Tu cliente de email se abrirá automáticamente.', 'success');
-    
-    // Reset form
-    form.reset();
-    resetFormState(submitBtn);
+
+    // Send data to the form service
+    fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: {
+            'Accept': 'application/json'
+        },
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            showMessage('¡Mensaje enviado correctamente! Te responderé pronto.', 'success');
+            form.reset();
+        } else {
+            return response.json().then(err => {
+                const errorMsg = err.error || 'Ocurrió un problema al enviar el mensaje.';
+                showMessage(errorMsg, 'error');
+            });
+        }
+    })
+    .catch(() => {
+        showMessage('Error de conexión. Por favor, intenta nuevamente.', 'error');
+    })
+    .finally(() => {
+        resetFormState(submitBtn);
+    });
 }
 
 function validateForm(data) {
@@ -59,21 +72,6 @@ function validateForm(data) {
     }
     
     return true;
-}
-
-function createEmailBody(data) {
-    return `
-Nombre: ${data.nombre}
-Email: ${data.email}
-Empresa: ${data.empresa || 'No especificada'}
-Tipo de Proyecto: ${data.proyecto || 'No especificado'}
-
-Mensaje:
-${data.mensaje}
-
----
-Enviado desde el formulario de contacto de heligonzalespe.com
-    `.trim();
 }
 
 function showMessage(text, type) {
