@@ -4,11 +4,10 @@
   "description": "Landing page profesional de Helí Gonzales Pérez - Especialista en ML, LLMs, Agentes, MCP, RAG e Infraestructura",
   "main": "index.html",
   "scripts": {
-    "start": "npx live-server .",
-    "build": "echo 'Building static site...' && npm run minify-css && npm run minify-js",
+    "prep": "shx mkdir -p dist/js dist/css",
     "minify-css": "npx clean-css-cli -o dist/css/styles.min.css css/styles.css",
-    "minify-js": "npx uglify-js js/main.js -o dist/js/main.min.js",
-    "deploy": "npm run build && echo 'Ready for deployment'"
+    "minify-js": "npx terser js/main.js -o dist/js/main.min.js --compress --mangle --source-map",
+    "build": "echo 'Building static site...' && npm run prep && npm run minify-css && npm run minify-js"
   },
   "keywords": [
     "portfolio",
@@ -26,7 +25,8 @@
   "devDependencies": {
     "live-server": "^1.2.2",
     "clean-css-cli": "^5.6.2",
-    "uglify-js": "^3.17.4"
+    "terser": "^5.31.0",
+    "shx": "^0.3.4"
   },
   "repository": {
     "type": "git",
