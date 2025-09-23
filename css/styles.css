@@ -708,3 +708,8 @@ body {
 .fade-in-up {
     animation: fadeInUp 0.6s ease-out;
 }
+
+.avatar-img {
+    width: 310px; /* Ajusta el ancho a tu preferencia */
+    height: auto; /* Mantiene la relación de aspecto */
+}
