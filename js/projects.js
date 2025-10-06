@@ -1,10 +1,10 @@
-// Projects data and management
+// Projects data and management - English version
 const projectsData = {
     ml: [
         {
             id: 'cmab-banking',
-            title: 'Personalización bancaria con CMAB',
-            description: 'Sistema de bandits contextuales para optimizar campañas crediticias en tiempo real.',
+            title: 'Banking personalization with CMAB',
+            description: 'Contextual bandits system to optimize credit campaigns in real time.',
             thumbnail: 'assets/images/projects/cmab-thumbnail.jpg',
             tech: ['Python', 'XGBoost', 'Databricks', 'MLflow'],
             links: {
@@ -21,8 +21,8 @@ const projectsData = {
     llms: [
         {
             id: 'customer-assistant',
-            title: 'Asistente de atención al cliente con LLMs',
-            description: 'Sistema de comprensión semántica para clasificación y respuesta automática de tickets.',
+            title: 'Customer service assistant with LLMs',
+            description: 'Semantic understanding system for automatic ticket classification and response.',
             thumbnail: 'assets/images/projects/llm-assistant-thumbnail.jpg',
             tech: ['OpenAI', 'LangChain', 'Guardrails', 'FastAPI'],
             links: {
@@ -39,8 +39,8 @@ const projectsData = {
     agentes: [
         {
             id: 'whatsapp-leads',
-            title: 'Agente de leads en WhatsApp',
-            description: 'Orquestación de agentes para captura y cualificación automática de leads multicanal.',
+            title: 'WhatsApp leads agent',
+            description: 'Agent orchestration for automatic multi-channel lead capture and qualification.',
             thumbnail: 'assets/images/projects/whatsapp-agent-thumbnail.jpg',
             tech: ['LangChain', 'WhatsApp API', 'CRM', 'Docker'],
             links: {
@@ -58,8 +58,8 @@ const projectsData = {
     mcp: [
         {
             id: 'multi-agent-coordination',
-            title: 'Coordinación multi-agente con MCP',
-            description: 'Protocolo de comunicación entre agentes para tareas complejas distribuidas.',
+            title: 'Multi-agent coordination with MCP',
+            description: 'Communication protocol between agents for complex distributed tasks.',
             thumbnail: 'assets/images/projects/mcp-coordination-thumbnail.jpg',
             tech: ['MCP Runtime', 'Event Bus', 'Redis', 'Kubernetes'],
             links: {
@@ -76,8 +76,8 @@ const projectsData = {
     rag: [
         {
             id: 'tech-docs-rag',
-            title: 'RAG para documentación técnica',
-            description: 'Sistema de recuperación y generación para consultas sobre documentación interna.',
+            title: 'RAG for technical documentation',
+            description: 'Retrieval and generation system for queries on internal documentation.',
             thumbnail: 'assets/images/projects/rag-docs-thumbnail.jpg',
             tech: ['FAISS', 'Embeddings', 'Reranker', 'Streamlit'],
             links: {
@@ -94,8 +94,8 @@ const projectsData = {
     infra: [
         {
             id: 'mlops-pipeline',
-            title: 'MLOps Pipeline con K8s',
-            description: 'Infraestructura completa para despliegue y monitoreo de modelos ML en producción.',
+            title: 'MLOps Pipeline with K8s',
+            description: 'Complete infrastructure for ML model deployment and monitoring in production.',
             thumbnail: 'assets/images/projects/mlops-pipeline-thumbnail.jpg',
             tech: ['Docker', 'Kubernetes', 'Helm', 'ArgoCD'],
             links: {
@@ -159,8 +159,8 @@ function getLinkText(type) {
     const linkTexts = {
         repo: 'Repo',
         demo: 'Demo',
-        case: 'Caso PDF',
-        hf_space: 'Space HF',
+        case: 'Case PDF',
+        hf_space: 'HF Space',
         docs: 'Docs'
     };
     return linkTexts[type] || type;

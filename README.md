@@ -1,6 +1,6 @@
-# 🚀 Portfolio Profesional - Helí Gonzales Pérez
+# 🚀 Professional Portfolio - Helí Gonzales Pérez
 
-Una landing page moderna y profesional que implementa el wireframe y storytelling especificado para mostrar experiencia en ML, LLMs, Agentes, MCP, RAG e Infraestructura.
+A modern and professional landing page that implements the specified wireframe and storytelling to showcase experience in ML, LLMs, Agents, MCP, RAG and Infrastructure.
 
 ## 📁 Estructura del Proyecto
 
@@ -140,6 +140,10 @@ portafolio/
 - **Tablet**: Adaptación de columnas y espaciado
 - **Mobile**: Stack vertical, navegación simplificada
 
+## 🌐 Language
+
+This portfolio is available in **English** only, designed for international reach and professional opportunities.
+
 ## 🚀 Despliegue
 
 ### GitHub Pages
@@ -148,45 +152,47 @@ portafolio/
 3. Selecciona la rama main como fuente
 4. El workflow de GitHub Actions se ejecutará automáticamente
 
-### Desarrollo Local
+### Local Development
 ```bash
-# Instalar dependencias
+# Install dependencies
 npm install
 
-# Servidor de desarrollo
-npm start
+# Development server
+npx live-server
 
-# Construir para producción
+# Access portfolio: http://localhost:8080/
+
+# Build for production
 npm run build
 ```
 
-### Otros hosts
-- Cualquier host estático (Netlify, Vercel, etc.)
-- Solo necesitas los archivos HTML, CSS y JS
+### Other hosts
+- Any static host (Netlify, Vercel, etc.)
+- You only need HTML, CSS and JS files
 
-## 📊 Métricas y KPIs
+## 📊 Metrics and KPIs
 
-La landing page está diseñada para mostrar:
-- **Experiencia técnica**: Stack moderno y proyectos diversos
-- **Impacto de negocio**: Métricas claras en cada proyecto
-- **Evolución profesional**: Timeline que conecta ML → Agentes
-- **Disponibilidad**: CTAs claros para contacto
+The landing page is designed to showcase:
+- **Technical experience**: Modern stack and diverse projects
+- **Business impact**: Clear metrics in each project
+- **Professional evolution**: Timeline connecting ML → Agents
+- **Availability**: Clear CTAs for contact
 
-## 🎯 Próximos Pasos
+## 🎯 Next Steps
 
-1. **Agregar proyectos reales**: Reemplazar placeholders con proyectos actuales
-2. **Optimizar imágenes**: Agregar thumbnails y GIFs de demos reales
-3. **SEO**: Meta tags adicionales y structured data
-4. **Analytics**: Google Analytics o similar
-5. **Formulario de contacto**: Implementar backend para formulario
-6. **Blog**: Agregar sección de artículos técnicos
+1. **Add real projects**: Replace placeholders with current projects
+2. **Optimize images**: Add thumbnails and real demo GIFs
+3. **SEO**: Additional meta tags and structured data
+4. **Analytics**: Google Analytics or similar
+5. **Contact form**: Implement backend for form
+6. **Blog**: Add technical articles section
 
-## 📞 Contacto
+## 📞 Contact
 
 - **Email**: heligonzalespe@gmail.com
 - **LinkedIn**: [linkedin.com/in/heligonzalespe](https://linkedin.com/in/heligonzalespe)
 - **GitHub**: [github.com/heligonzalespe](https://github.com/heligonzalespe)
 
-## 📄 Licencia
+## 📄 License
 
-MIT License - Ver archivo LICENSE para más detalles.
+MIT License - See LICENSE file for more details.
