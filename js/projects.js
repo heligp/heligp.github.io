@@ -6,14 +6,15 @@ const projectsData = {
             title: 'Personal Professional Agent',
             description: 'An intelligent conversational agent that allows people to learn about my professional and personal background through natural language interaction.',
             thumbnail: 'assets/images/projects/personal-agent-thumbnail.jpg',
-            tech: ['OpenAI', 'LangChain', 'Streamlit', 'Python'],
+            tech: ['OpenAI', 'Gradio', 'Python'],
             links: {
-                demo: 'https://heligonzalespe-agent.streamlit.app' // Replace with your actual demo URL
+                repo: 'https://github.com/heligonzalespe/agente_linkedin',
+                demo: 'https://huggingface.co/spaces/heligp/career_conversation' // Replace with your actual demo URL
             },
             metrics: {
                 availability: '24/7',
                 languages: 'English/Spanish',
-                uptime: '99.9%'
+                uptime: 'On demand'
             }
         }
     ],
