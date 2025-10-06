@@ -72,6 +72,7 @@ function validateForm(data) {
     }
     
     return true;
+}
 
 function showMessage(text, type) {
     // Remove existing messages
