@@ -57,7 +57,7 @@ function handleFormSubmit(e) {
 }
 
 function validateForm(data) {
-    const requiredFields = ['nombre', 'email', 'mensaje'];
+    const requiredFields = ['name', 'email', 'message']; // Cambiado de español a inglés
     
     for (const field of requiredFields) {
         if (!data[field] || data[field].trim() === '') {
@@ -72,7 +72,6 @@ function validateForm(data) {
     }
     
     return true;
-}
 
 function showMessage(text, type) {
     // Remove existing messages
