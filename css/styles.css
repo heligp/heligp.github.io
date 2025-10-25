@@ -778,3 +778,73 @@ body {
 .project-card.coming-soon .project-description {
     color: var(--gray-500);
 }
+
+.value-path {
+    padding: 80px 0;
+    text-align: center;
+  }
+  
+  .value-path .section-title {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+  
+  .value-path .section-subtitle {
+    font-size: 1.1rem;
+    color: var(--gray-600);
+    margin-bottom: 32px;
+  }
+  
+  .value-path .section-intro {
+    font-size: 1.1rem;
+    color: var(--gray-700);
+    max-width: 720px;
+    margin: 0 auto 48px;
+    line-height: 1.6;
+  }
+  
+  .value-flow {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .value-step {
+    background: var(--gray-50, #f9fafb);
+    border: 2px solid var(--gray-200, #e5e7eb);
+    border-radius: 16px;
+    padding: 20px 24px;
+    width: 150px;
+    transition: all 0.3s ease;
+  }
+  
+  .value-step:hover {
+    border-color: var(--primary-500, #3b82f6);
+    transform: translateY(-4px);
+  }
+  
+  .value-step .icon {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+  }
+  
+  .value-step .title {
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 4px;
+  }
+  
+  .value-step .desc {
+    font-size: 0.85rem;
+    color: var(--gray-600);
+  }
+  
+  .connector {
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6 0%, #60a5fa 100%);
+    border-radius: 2px;
+  }
+  
