@@ -1,5 +1,83 @@
 # 🚀 Professional Portfolio - Helí Gonzales Pérez
 
+Modern landing page to showcase experience in Advanced Analytics, ML, Generative AI (LLMs & RAG), Agents (MCP) and Production Infrastructure.
+
+## Project structure
+
+```
+portafolio/
+├── index.html
+├── css/styles.css
+├── js/
+├── assets/
+│   ├── images/
+│   │   ├── projects/
+│   │   └── tech/
+│   └── docs/
+└── README.md
+```
+
+## Summary
+
+- End‑to‑end leadership: evaluation, experimentation, approach selection (Analytics / Generative AI / ML / Automation), build, deploy and scale.
+- Practical, evidence‑first: prioritize ROI, validate with experiments (A/B, uplift, controlled tests) and move working solutions to production with observability and governance.
+- Tech: ML, MLOps, LLMs, RAG, LangChain, Agents/MCP, Kubernetes, Docker, Azure, Databricks, MLflow, Hugging Face.
+
+## Sections implemented
+
+- Hero, About, Projects (filterable), Timeline (value path), Spotlight, Tech Stack, CTA, Footer.
+
+## How to update
+
+- Projects: edit `js/projects.js` and add thumbnails to `assets/images/projects/`.
+- Colors: edit CSS variables in `css/styles.css`.
+- Tech logos: place SVGs in `assets/images/tech/`.
+
+## Local development
+
+```bash
+# optional: install deps
+npm install
+
+# serve locally
+npx live-server
+# open http://localhost:8080/
+```
+
+## Deployment
+
+- Static hosts: GitHub Pages, Netlify, Vercel recommended.
+- CI: GitHub Actions workflow (optional).
+
+## Design & accessibility
+
+- Responsive layout, accessible contrast, keyboard navigation and alt text for images.
+- Interactions: hover effects, smooth scroll, lightweight animations.
+
+## Storytelling highlights (examples)
+
+- ML (Prediction): propensity and uplift models with strict validation — measurable conversion uplift.
+- LLMs & RAG: contextual retrieval and controlled generation to reduce hallucinations and improve user experience.
+- Agents & MCP: orchestrated automation turning insights into actions (24/7 workflows).
+- Infra/Stack: containerization, CI/CD and production‑ready deployments to ensure reliability and scale.
+
+## Next steps
+
+1. Add real project entries and measurable outcomes.  
+2. Optimize assets and accessibility.  
+3. Integrate analytics and contact backend.  
+
+## Contact
+
+- Email: heligonzalespe@gmail.com  
+- LinkedIn: https://linkedin.com/in/heligonzalespe  
+- GitHub: https://github.com/heligonzalespe
+
+## License
+
+MIT
+# 🚀 Professional Portfolio - Helí Gonzales Pérez
+
 A modern and professional landing page that implements the specified wireframe and storytelling to showcase experience in ML, LLMs, Agents, MCP, RAG and Infrastructure.
 
 ## 📁 Estructura del Proyecto
@@ -47,52 +125,10 @@ portafolio/
 └── 📄 README.md                # Documentación
 ```
 
-## 🚀 Características
-
-### Diseño Visual
-- **Grid**: 12 columnas, contenedor máximo 1200px, gutters 24px
-- **Espaciado**: Secciones (mt-24 mb-24), bloques (mt-8 mb-8), elementos (mt-4 mb-4)
-- **Colores**: Turquesa `#06B6D4`, Azul `#3B82F6`, Texto Navy `#0F172A`
-- **Tipografía**: Inter con pesos 700 (headings), 500 (subheads), 400 (body)
-- **Cards**: Radio 16-20px, sombra suave, hover-lift 4px
-- **Botones**: Primario turquesa, secundario contorno azul
-
-### Secciones Implementadas
-
-1. **Hero**: Título principal + subtítulo + CTAs
-2. **Sobre mí**: Avatar + badges + descripción profesional
-3. **Proyectos**: Hub con filtros por categoría (ML, LLMs, Agentes, MCP, RAG, Infra/Stack)
-4. **Timeline**: Camino de valor mostrando evolución ML → RAG → Agentes → MCP → Infra
-5. **Spotlight**: Proyecto destacado con demo y métricas
-6. **Tech Stack**: Logos de tecnologías
-7. **CTA**: Llamada a la acción final
-8. **Footer**: Enlaces sociales
-
-### Funcionalidades
-
-- **Filtros de proyectos**: JavaScript para filtrar por categoría
-- **Navegación suave**: Scroll suave entre secciones
-- **Responsive**: Diseño adaptativo para móviles y tablets
-- **Animaciones**: Efectos hover y transiciones suaves
-- **Accesibilidad**: Contraste AAA, alt text, navegación por teclado
-- **Formulario de contacto**: Validación y envío por email
-- **Páginas adicionales**: About y Contact con contenido específico
 
 ## 🎨 Storytelling Unificado
 
 ### Por Categoría de Proyecto
-
-**ML (Predicción)**
-- Headline: "Predicción accionable para impacto inmediato"
-- Problema: Bajo hit-rate en campañas crediticias
-- Solución: Modelos de propensión y uplift con validación estricta
-- Impacto: +12% conversión; ahorro 18% costo por adquisición
-
-**LLMs**
-- Headline: "Comprensión semántica y generación controlada"
-- Problema: Textos de clientes dispersos (emails, tickets, notas)
-- Solución: LLM con prompts evaluables y guardrails
-- Impacto: -35% Tiempos de respuesta; +NPS
 
 **Agentes**
 - Headline: "De insights a acciones automáticas"
@@ -100,23 +136,6 @@ portafolio/
 - Solución: Agentes orquestados con herramientas y políticas
 - Impacto: 24/7; +x% conversión inbound
 
-**MCP (Multi-Agent Coordination Protocol)**
-- Headline: "Coordinación fiable entre agentes"
-- Problema: Agentes aislados, resultados inconsistentes
-- Solución: MCP para negociación, asignación de tareas y trazabilidad
-- Impacto: Menos errores, más throughput
-
-**RAG**
-- Headline: "Conocimiento propio, respuestas precisas"
-- Problema: Hallucinations y falta de contexto
-- Solución: RAG con indexación de documentos (chunking, reranking)
-- Impacto: +Exactitud; -Costos por token
-
-**Infra/Stack**
-- Headline: "Listo para producción y escala"
-- Problema: Prototipos que no llegan a prod
-- Solución: Contenerización, CI/CD, despliegue K8s
-- Impacto: Releases confiables; costos controlados
 
 ## 🔧 Personalización
 
