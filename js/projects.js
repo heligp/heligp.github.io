@@ -4,12 +4,12 @@ const projectsData = {
         {
             id: 'personal-agent',
             title: 'Personal Professional Agent',
-            description: 'An intelligent conversational agent that allows people to learn about my professional and personal background through natural language interaction.',
+            description: 'An intelligent conversational agent that allows people to learn about my professional and personal background through natural language interaction. Send me your name and email if you want to know more about me',
             thumbnail: 'assets/images/projects/personal-agent-thumbnail.jpg',
-            tech: ['OpenAI', 'Gradio', 'Python'],
+            tech: ['OpenAI', 'Gradio', 'Python', 'GCP'],
             links: {
                 repo: 'https://github.com/heligonzalespe/agente_linkedin',
-                demo: 'https://huggingface.co/spaces/heligp/career_conversation' // Replace with your actual demo URL
+                demo: 'https://gradio-app-131208823571.us-central1.run.app/' // Replace with your actual demo URL
             },
             metrics: {
                 availability: '24/7',
