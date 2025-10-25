@@ -8,7 +8,7 @@ const projectsData = {
             thumbnail: 'assets/images/projects/personal-agent-thumbnail.jpg',
             tech: ['OpenAI', 'Gradio', 'Python', 'GCP'],
             links: {
-                repo: 'https://github.com/heligonzalespe/agente_linkedin',
+                repo: 'https://github.com/heligp/agente_linkedin',
                 demo: 'https://gradio-app-131208823571.us-central1.run.app/' // Replace with your actual demo URL
             },
             metrics: {
