@@ -17,11 +17,6 @@ portafolio/
 └── README.md
 ```
 
-## Summary
-
-- End‑to‑end leadership: evaluation, experimentation, approach selection (Analytics / Generative AI / ML / Automation), build, deploy and scale.
-- Practical, evidence‑first: prioritize ROI, validate with experiments (A/B, uplift, controlled tests) and move working solutions to production with observability and governance.
-- Tech: ML, MLOps, LLMs, RAG, LangChain, Agents/MCP, Kubernetes, Docker, Azure, Databricks, MLflow, Hugging Face.
 
 ## Sections implemented
 

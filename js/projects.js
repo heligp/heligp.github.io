@@ -5,7 +5,7 @@ const projectsData = {
             id: 'personal-agent',
             title: 'Personal Professional Agent',
             description: 'An intelligent conversational agent that allows people to learn about my professional and personal background through natural language interaction. Send me your name and email if you want to know more about me',
-            thumbnail: 'assets/images/projects/personal-agent-thumbnail.jpg',
+            thumbnail: 'assets/images/projects/agentic.PNG',
             tech: ['OpenAI', 'Gradio', 'Python', 'GCP'],
             links: {
                 repo: 'https://github.com/heligp/agente_linkedin',
