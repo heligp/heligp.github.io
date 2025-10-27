@@ -1,6 +1,6 @@
 // Contact form functionality
 // Replace the endpoint below with your Formspree (or other service) URL
-const FORM_ENDPOINT = 'https://formspree.io/f/your_form_id';
+const FORM_ENDPOINT = 'https://formspree.io/f/xnngzonj';
 
 document.addEventListener('DOMContentLoaded', function() {
     const contactForm = document.querySelector('.contact-form');
