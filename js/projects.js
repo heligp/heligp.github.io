@@ -24,7 +24,7 @@ const projectsData = {
         id: 'insurellm-rag',
         title: 'Personal Professional Agent for InsureLLM - RAG Powered',
         description: 'An intelligent conversational agent that allows people to learn about my professional and personal background through natural language interaction. Users can ask questions as if they were talking to me directly, receiving grounded and contextual answers of "InsureLLM" powered by RAG.',
-        thumbnail: 'assets/images/projects/insure-llm.jpg',
+        thumbnail: 'assets/images/projects/rag.png',
         tech: [
             'LangGraph/LangChain',
             'Chroma',
