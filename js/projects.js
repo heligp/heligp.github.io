@@ -19,7 +19,7 @@ const projectsData = {
         }
     ],
     
-    agentes: [
+    rag: [
     {
         id: 'insurellm-rag',
         title: 'Personal Professional Agent for InsureLLM - RAG Powered',
@@ -55,7 +55,7 @@ const projectsData = {
             links: {},
             metrics: {
                 status: 'In Development',
-                eta: 'Q4 2025'
+                eta: 'Q1 2026'
             },
             isComingSoon: true
         }
