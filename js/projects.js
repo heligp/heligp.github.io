@@ -18,6 +18,33 @@ const projectsData = {
             }
         }
     ],
+    
+    agentes: [
+    {
+        id: 'insurellm-rag',
+        title: 'Personal Professional Agent for InsureLLM - RAG Powered',
+        description: 'An intelligent conversational agent that allows people to learn about my professional and personal background through natural language interaction. Users can ask questions as if they were talking to me directly, receiving grounded and contextual answers of "InsureLLM" powered by RAG.',
+        thumbnail: 'assets/images/projects/personal-agent-thumbnail.jpg',
+        tech: [
+            'LangGraph/LangChain',
+            'Chroma',
+            'FastAPI',
+            'Python',
+            'GCP Cloud Run'
+        ],
+        links: {
+            repo: 'https://github.com/heligp/project-rag',
+            demo: 'https://gradio-app-131208823571.us-central1.run.app/'
+        },
+        metrics: {
+            availability: '24/7',
+            languages: 'English / Spanish',
+            uptime: 'On-demand (Cloud Run)',
+            architecture: 'RAG + Agentic Workflow'
+        }
+    }
+    ],
+
     coming_soon: [
         {
             id: 'coming-soon-1',
